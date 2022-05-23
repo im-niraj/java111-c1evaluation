@@ -4,9 +4,16 @@ public class Immutable {
 
 	public static void main(String[] args) {
 //		String Immutable
+//		Immutable means Once value assign we cann't reassign or change the value of that object
+		
 		String str  = "Welcome";
-		str.concat("to the Java"); // cannot change str because Strings are immutable
+		String str2  = "Welcome";
+		// str has value "Welcome" 
+		// but str2 has "Welcome" value's address because str2 object has not created
+		// if some one do change the value of str2 = "welcome back" then str also changed
+		// that is why Java is immutable 
 		System.out.println(str);
+		System.out.println(str2);
 		
 		String abc = str.concat("to the Java"); // but we can assinge it to another address with new value
 		System.out.println(abc);
